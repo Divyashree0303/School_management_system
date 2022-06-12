@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 
 
-const dbURI = "mongodb+srv://Divya:Divya123@cluster0.dkyeo.mongodb.net/schooldb";
+const dbURI = process.env.URI;
 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true})
   .then((result) => app.listen(3000, () => {
