@@ -22,5 +22,19 @@ Login route
 
         this will send the user object and auth_token as response
   
+ admin route
+   
+   1. /admin/teacher/?name=<teacherName>&email_id=<email>&password=<password>
+      request header =>  authorization : Bearer <auth_token>
+      will create new login for teacher
+      
+   2. /admin/student/?name=<studentName>&email_id=<email>&password=<password>
+      request header =>  authorization : Bearer <auth_token>
+      will create new login for student
+      
+   3. /admin/class/?className=<classname>
+      request header =>  authorization : Bearer <auth_token>
+      will create new class
+      
 
   
